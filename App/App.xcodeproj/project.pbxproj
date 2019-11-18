@@ -17,7 +17,26 @@
 		50F7D1892381478F00326B08 /* libRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F7D1872381478F00326B08 /* libRepository.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5009D3102382E52E00008FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5009D30C2382E52E00008FA3 /* Logger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50F7D1482381455A00326B08;
+			remoteInfo = Logger;
+		};
+		5009D3162382E53A00008FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5009D3122382E53A00008FA3 /* Repository.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50F7D15B238145AB00326B08;
+			remoteInfo = Repository;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5009D30C2382E52E00008FA3 /* Logger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Logger.xcodeproj; path = ../Logger/Logger.xcodeproj; sourceTree = "<group>"; };
+		5009D3122382E53A00008FA3 /* Repository.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Repository.xcodeproj; path = ../Repository/Repository.xcodeproj; sourceTree = "<group>"; };
 		50F7D16E238145FC00326B08 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F7D171238145FC00326B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F7D173238145FC00326B08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +62,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5009D30D2382E52E00008FA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5009D3112382E52E00008FA3 /* libLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5009D3132382E53A00008FA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5009D3172382E53A00008FA3 /* libRepository.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		50F7D165238145FC00326B08 = {
 			isa = PBXGroup;
 			children = (
+				5009D30C2382E52E00008FA3 /* Logger.xcodeproj */,
+				5009D3122382E53A00008FA3 /* Repository.xcodeproj */,
 				50F7D170238145FC00326B08 /* App */,
 				50F7D16F238145FC00326B08 /* Products */,
 				50F7D1852381478F00326B08 /* Frameworks */,
@@ -129,12 +166,39 @@
 			mainGroup = 50F7D165238145FC00326B08;
 			productRefGroup = 50F7D16F238145FC00326B08 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5009D30D2382E52E00008FA3 /* Products */;
+					ProjectRef = 5009D30C2382E52E00008FA3 /* Logger.xcodeproj */;
+				},
+				{
+					ProductGroup = 5009D3132382E53A00008FA3 /* Products */;
+					ProjectRef = 5009D3122382E53A00008FA3 /* Repository.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50F7D16D238145FC00326B08 /* App */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5009D3112382E52E00008FA3 /* libLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLogger.a;
+			remoteRef = 5009D3102382E52E00008FA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5009D3172382E53A00008FA3 /* libRepository.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRepository.a;
+			remoteRef = 5009D3162382E53A00008FA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50F7D16C238145FC00326B08 /* Resources */ = {
