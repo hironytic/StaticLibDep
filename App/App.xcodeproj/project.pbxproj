@@ -7,17 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5009D2FA2382E08600008FA3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5009D2E12382E01D00008FA3 /* Logger.swift */; };
+		5009D2FB2382E08B00008FA3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5009D2DF2382E01D00008FA3 /* Repository.swift */; };
+		5009D2FC2382E0A900008FA3 /* libLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5009D2E82382E03E00008FA3 /* libLogger.a */; };
+		5009D2FF2382E0A900008FA3 /* libRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5009D2F32382E04B00008FA3 /* libRepository.a */; };
 		50F7D172238145FC00326B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7D171238145FC00326B08 /* AppDelegate.swift */; };
 		50F7D174238145FC00326B08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7D173238145FC00326B08 /* SceneDelegate.swift */; };
 		50F7D176238145FC00326B08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7D175238145FC00326B08 /* ViewController.swift */; };
 		50F7D179238145FC00326B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F7D177238145FC00326B08 /* Main.storyboard */; };
 		50F7D17B2381460100326B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F7D17A2381460100326B08 /* Assets.xcassets */; };
 		50F7D17E2381460100326B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F7D17C2381460100326B08 /* LaunchScreen.storyboard */; };
-		50F7D1882381478F00326B08 /* libLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F7D1862381478F00326B08 /* libLogger.a */; };
-		50F7D1892381478F00326B08 /* libRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F7D1872381478F00326B08 /* libRepository.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5009D2FD2382E0A900008FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7D166238145FC00326B08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5009D2E72382E03E00008FA3;
+			remoteInfo = Logger;
+		};
+		5009D3002382E0A900008FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7D166238145FC00326B08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5009D2F22382E04B00008FA3;
+			remoteInfo = Repository;
+		};
+		5009D3022382E0B600008FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7D166238145FC00326B08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5009D2E72382E03E00008FA3;
+			remoteInfo = Logger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5009D2E62382E03E00008FA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5009D2F12382E04B00008FA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5009D2DF2382E01D00008FA3 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		5009D2E12382E01D00008FA3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		5009D2E82382E03E00008FA3 /* libLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5009D2F32382E04B00008FA3 /* libRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRepository.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F7D16E238145FC00326B08 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F7D171238145FC00326B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F7D173238145FC00326B08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,21 +82,53 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5009D2E52382E03E00008FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5009D2F02382E04B00008FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F7D16B238145FC00326B08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F7D1882381478F00326B08 /* libLogger.a in Frameworks */,
-				50F7D1892381478F00326B08 /* libRepository.a in Frameworks */,
+				5009D2FC2382E0A900008FA3 /* libLogger.a in Frameworks */,
+				5009D2FF2382E0A900008FA3 /* libRepository.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5009D2DE2382E01D00008FA3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5009D2DF2382E01D00008FA3 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5009D2E02382E01D00008FA3 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				5009D2E12382E01D00008FA3 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		50F7D165238145FC00326B08 = {
 			isa = PBXGroup;
 			children = (
+				5009D2E02382E01D00008FA3 /* Logger */,
+				5009D2DE2382E01D00008FA3 /* Repository */,
 				50F7D170238145FC00326B08 /* App */,
 				50F7D16F238145FC00326B08 /* Products */,
 				50F7D1852381478F00326B08 /* Frameworks */,
@@ -56,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				50F7D16E238145FC00326B08 /* App.app */,
+				5009D2E82382E03E00008FA3 /* libLogger.a */,
+				5009D2F32382E04B00008FA3 /* libRepository.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +171,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5009D2E72382E03E00008FA3 /* Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5009D2EC2382E03E00008FA3 /* Build configuration list for PBXNativeTarget "Logger" */;
+			buildPhases = (
+				5009D2E42382E03E00008FA3 /* Sources */,
+				5009D2E52382E03E00008FA3 /* Frameworks */,
+				5009D2E62382E03E00008FA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logger;
+			productName = Logger;
+			productReference = 5009D2E82382E03E00008FA3 /* libLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5009D2F22382E04B00008FA3 /* Repository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5009D2F72382E04B00008FA3 /* Build configuration list for PBXNativeTarget "Repository" */;
+			buildPhases = (
+				5009D2EF2382E04B00008FA3 /* Sources */,
+				5009D2F02382E04B00008FA3 /* Frameworks */,
+				5009D2F12382E04B00008FA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5009D3032382E0B600008FA3 /* PBXTargetDependency */,
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 5009D2F32382E04B00008FA3 /* libRepository.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		50F7D16D238145FC00326B08 /* App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F7D1822381460100326B08 /* Build configuration list for PBXNativeTarget "App" */;
@@ -97,6 +217,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				5009D2FE2382E0A900008FA3 /* PBXTargetDependency */,
+				5009D3012382E0A900008FA3 /* PBXTargetDependency */,
 			);
 			name = App;
 			productName = App;
@@ -113,6 +235,12 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Hironytic;
 				TargetAttributes = {
+					5009D2E72382E03E00008FA3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					5009D2F22382E04B00008FA3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					50F7D16D238145FC00326B08 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -132,6 +260,8 @@
 			projectRoot = "";
 			targets = (
 				50F7D16D238145FC00326B08 /* App */,
+				5009D2E72382E03E00008FA3 /* Logger */,
+				5009D2F22382E04B00008FA3 /* Repository */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +280,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5009D2E42382E03E00008FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5009D2FA2382E08600008FA3 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5009D2EF2382E04B00008FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5009D2FB2382E08B00008FA3 /* Repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F7D16A238145FC00326B08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +307,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5009D2FE2382E0A900008FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5009D2E72382E03E00008FA3 /* Logger */;
+			targetProxy = 5009D2FD2382E0A900008FA3 /* PBXContainerItemProxy */;
+		};
+		5009D3012382E0A900008FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5009D2F22382E04B00008FA3 /* Repository */;
+			targetProxy = 5009D3002382E0A900008FA3 /* PBXContainerItemProxy */;
+		};
+		5009D3032382E0B600008FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5009D2E72382E03E00008FA3 /* Logger */;
+			targetProxy = 5009D3022382E0B600008FA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50F7D177238145FC00326B08 /* Main.storyboard */ = {
@@ -182,6 +346,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5009D2ED2382E03E00008FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5009D2EE2382E03E00008FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5009D2F82382E04B00008FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5009D2F92382E04B00008FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		50F7D1802381460100326B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +553,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5009D2EC2382E03E00008FA3 /* Build configuration list for PBXNativeTarget "Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5009D2ED2382E03E00008FA3 /* Debug */,
+				5009D2EE2382E03E00008FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5009D2F72382E04B00008FA3 /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5009D2F82382E04B00008FA3 /* Debug */,
+				5009D2F92382E04B00008FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50F7D169238145FC00326B08 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

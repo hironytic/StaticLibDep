@@ -26,7 +26,7 @@
 import Foundation
 
 public struct Logger {
-    public init() {        
+    public init() {
     }
     
     public func log(_ message: String) {
